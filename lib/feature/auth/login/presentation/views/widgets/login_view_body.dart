@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
 import '../../../../../../core/Router/app_router.dart';
-import '../../../../../../core/uitils/custom_elevated_button.dart';
-import '../../../../../../core/uitils/custom_text_form_filed.dart';
-import '../../../../../../core/uitils/text_widget.dart';
-import '../../../../../../core/uitils/validation/email_validation.dart';
-import '../../../../../../core/uitils/validation/password_validation.dart';
+import '../../../../../../core/utils/custom_elevated_button.dart';
+import '../../../../../../core/utils/custom_text_form_filed.dart';
+import '../../../../../../core/utils/text_widget.dart';
+import '../../../../../../core/utils/validation/email_validation.dart';
+import '../../../../../../core/utils/validation/password_validation.dart';
 
 class LoginViewBody extends StatefulWidget {
   const LoginViewBody({super.key});
@@ -92,13 +91,13 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                       validator: passwordValidation,
                     ),
                     SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.1,
+                      height: MediaQuery.of(context).size.height * 0.05,
                     ),
                     CustomElevatedButton(
                       onPressed: () {
                         login();
                       },
-                      text: 'Sing ip',
+                      text: 'Sign in',
                     ),
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.01,

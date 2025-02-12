@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:weather/core/Router/app_router.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
+import 'core/di/dependency_injection.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -9,6 +10,8 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  final di = DependencyInjection();
+  di.configure();
   runApp(const WeatherApp());
 }
 

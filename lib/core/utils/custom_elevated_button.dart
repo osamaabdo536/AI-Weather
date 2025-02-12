@@ -22,11 +22,11 @@ class CustomElevatedButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
         ),
       ),
-      child: const TextWidget(
-        text: "Sing up",
+      child: TextWidget(
+        text: text,
         size: 24,
         fontWeight: FontWeight.w500,
-        color: Color(0xff004182),
+        color: const Color(0xff004182),
       ),
     );
   }
