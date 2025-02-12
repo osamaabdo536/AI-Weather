@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:weather/core/uitils/text_widget.dart';
 import 'package:weather/core/uitils/validation/email_validation.dart';
 import 'package:weather/core/uitils/validation/password_validation.dart';
-import '../../../../../core/uitils/custom_elevated_button.dart';
-import '../../../../../core/uitils/custom_text_form_filed.dart';
+
+import '../../../../../../core/Router/app_router.dart';
+import '../../../../../../core/uitils/custom_elevated_button.dart';
+import '../../../../../../core/uitils/custom_text_form_filed.dart';
 
 class RegisterViewBody extends StatefulWidget {
   const RegisterViewBody({super.key});
@@ -26,15 +29,17 @@ class _RegisterViewBodyState extends State<RegisterViewBody> {
       child: Scaffold(
         backgroundColor: const Color(0xff004182),
         body: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 30),
+          padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.02,
+              ),
               const TextWidget(
                 text: 'Welcome to weather app',
                 size: 28,
                 fontWeight: FontWeight.w500,
-                align: TextAlign.center,
               ),
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.05,
@@ -141,7 +146,7 @@ class _RegisterViewBodyState extends State<RegisterViewBody> {
                         ),
                         InkWell(
                           onTap: (){
-
+                            GoRouter.of(context).push(AppRouter.loginView);
                           },
                           child: const TextWidget(
                             text: 'Sing in',
