@@ -10,9 +10,9 @@ AI-Weather is a Flutter-based mobile application that provides real-time weather
 
 The app follows clean architecture, structured in three layers:
 
-- **Presentation Layer**: Manages the UI and state with BLoC/Cubit for smooth state management.
-- **Domain Layer**: Contains the core business logic, use cases, and entities.
-- **Data Layer**: Interacts with external APIs (Weather API) and Firebase for authentication.
+- **Presentation Layer**
+- **Domain Layer**
+- **Data Layer**
 
 ## Technologies Used
 
