@@ -1,6 +1,5 @@
 # weather
-
-A new Flutter project.
+Weather Mate is a Flutter-based mobile application that provides real-time weather updates and AI-based activity predictions. The app leverages clean architecture principles to ensure maintainability and scalability.
 
 ## Getting Started
 
