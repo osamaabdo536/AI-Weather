@@ -21,19 +21,19 @@ The app follows clean architecture, structured in three layers:
 
 ## Installation
 
-### Clone the repository:
+Clone the repository:
 ```bash
 git clone https://github.com/osamaabdo536/AI-Weather.git
 ```
-### Navigate to the project directory:
+Navigate to the project directory:
 ```bash
 cd AI-Weather
 ```
-### Install the dependencies:
+Install the dependencies:
 ```bash
 flutter pub get
 ```
-### Run the app:
+Run the app:
 ```bash
 flutter run
 ```
