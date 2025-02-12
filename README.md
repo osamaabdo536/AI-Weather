@@ -2,7 +2,7 @@
 
 AI-Weather is a Flutter-based mobile application that provides real-time weather updates and AI-based activity predictions. The app leverages clean architecture principles to ensure maintainability and scalability.
 
-https://github.com/user-attachments/assets/b5fcc134-4be6-46cf-a45e-d3c84d65080c
+https://github.com/user-attachments/assets/ad364dec-e770-487d-9ea5-52966c47c1ab
 
 ## Features
 
