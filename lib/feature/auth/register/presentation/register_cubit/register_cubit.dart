@@ -21,7 +21,6 @@ class RegisterCubit extends Cubit<RegisterStates> {
     if (key.currentState?.validate() == true) {
       try {
         emit(RegisterLoadingState());
-        print('Before Firebase call');
 
         var response = await registerRepo.register(
           fullNameController.text,
@@ -29,15 +28,14 @@ class RegisterCubit extends Cubit<RegisterStates> {
           passwordController.text,
           confirmationPasswordController.text,
         );
-        print('After Firebase call');
 
         if (response?.user?.uid != null) {
           emit(RegisterSuccessState());
         } else {
-          emit(RegisterErrorState('error'));
+          emit(RegisterErrorState(response.toString()));
         }
       } catch (e) {
-        emit(RegisterErrorState("helppppppp"));
+        emit(RegisterErrorState("Something went wrong!!"));
       }
     }
   }
